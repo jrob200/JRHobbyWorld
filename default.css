@@ -1,0 +1,11 @@
+html, body {
+    width: 100%;
+}
+
+H1 {text-align: center}
+H3 {text-align: center}
+
+table, th, td {
+    border: 1px solid black;
+    margin: 0 auto;
+}
