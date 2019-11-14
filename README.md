@@ -2,4 +2,4 @@
 
 ## Hobby Business Website
 
-** A Codecademy Premium Project
+**A Codecademy Premium Project**
