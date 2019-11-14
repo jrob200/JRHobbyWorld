@@ -1,2 +1,5 @@
 # JRHobbyWorld
-Hobby Business Website
+
+## Hobby Business Website
+
+** A Codecademy Premium Project
