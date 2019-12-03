@@ -38,7 +38,7 @@
 
 .footer_container {
     grid-column: 1 / -1;
-    grid-row-start: 6;
+    grid-row: 6 / span 3;
 }
 
 /* Formating Classes */
@@ -53,13 +53,12 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-h2, h3 {
+h2, h3, h5 {
     color: #1F567A;
 }
 p {
     font-family: "Roboto Slab", serif;
-    display: flex;
-    flex-direction: column-reverse;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -81,25 +80,25 @@ img {
     font-size: 24px;
 }
 
-.new_rpg_products {
-    text-align: center;
+.new_products {
+    font-size: 24px;
+    background-color: lightgrey;
 }
 
-.new_bg_products {
+.new_rpg_products, .new_bg_products, .new_ccg_products {
     text-align: center;
-}
-
-.new_ccg_products {
-    text-align: center;
+    border: medium solid lightgrey;
+    background-color: lightgrey;
 }
 
 .footer_links{
-    height: 48px;
+    height: 96px;
     background-color: #1F567A;
+    word-spacing: 10px;
 }
 
 .footer_links a {
-    font-size: 16px;
+    font-size: 24px;
     color:#F1F3F8;
 }
 
