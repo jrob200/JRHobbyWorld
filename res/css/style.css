@@ -1,10 +1,9 @@
 /* Grid Classes */
 
 .container {
-    width: auto;
+    width: 1920px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 200px);
+    grid-template: repeat(6, 200px) / repeat(12, 1fr);
     grid-gap: 20px;
 }
 
@@ -13,11 +12,28 @@
     grid-row: 1;
 }
 
-.new_products_container {
+.daily_deals_container {
     display: grid;
-    grid-template-areas: repeat(2, 200px) / repeat(3, 1fr);
+    grid-template: repeat(3, 200px) / repeat(12, 1fr);
     grid-column: 1 / -1;
     grid-row: 2;
+}
+
+#daily_deals_title {
+    grid-column: 1/ -1;
+    grid-row: 1;
+}
+
+.daily_deals_container img {
+    display: flex;
+    flex-direction: column;
+}
+
+.new_products_container {
+    display: grid;
+    grid-template: repeat(3, 200px) / repeat(9, 1fr);
+    grid-column: 1 / -1;
+    grid-row: 5;
 }
 
 .new_products_container h3 {
@@ -38,16 +54,9 @@
 
 .top_selling_products_container {
     display: grid;
-    grid-template-areas: repeat(3, 200px) / repeat(4, 1fr);
+    grid-template-areas: repeat(4, 200px) / repeat(12, 1fr);
     grid-column: 1 / -1;
     grid-row: 2;
-}
-
-.product_spotlight_container {
-    display: grid;
-    grid-template-areas: repeat(3, 200px) / repeat(4, 1fr);
-    grid-column: 1 / -1;
-    grid-row: 5;
 }
 
 .footer_container {
@@ -84,7 +93,8 @@ img {
 
 .title_bar {
     color: #F1F3F8;
-    background-color: #1F567A
+    background-color: #1F567A;
+    width: 100%;
 }
 
 .title_bar h1 {
@@ -97,13 +107,10 @@ img {
 
 .new_products {
     font-size: 24px;
-    background-color: lightgrey;
 }
 
-.new_rpg_products, .new_bg_products, .new_ccg_products {
+.new_rpg_products, .new_bg_products, .new_ccg_products, .daily_deals {
     text-align: center;
-    border: medium solid lightgrey;
-    background-color: lightgrey;
 }
 
 .footer_links{
