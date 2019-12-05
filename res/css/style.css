@@ -65,6 +65,18 @@
     grid-row: 6;
 }
 
+.about_container {
+    grid-column: 1 / span 3;
+}
+
+.customer_service_container {
+    grid-column: 5 / span 3;
+}
+
+.store_policies_container {
+    grid-column: 9 / span 3;
+}
+
 .footer_container {
     grid-column: 1 / -1;
     grid-row: 12 / span 3;
@@ -87,7 +99,7 @@ h2, h3, h5 {
     color: #1F567A;
 }
 
-p {
+p, li {
     font-family: "Roboto Slab", serif;
     font-size: 16px;
     text-align: center;
@@ -143,6 +155,19 @@ img {
 }
 
 .product_description p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.about p {
+    text-align: left;
+}
+
+.customer_service {
+    text-align: left;
+}
+
+.store_policies li {
     text-align: left;
     font-size: 14px;
 }
