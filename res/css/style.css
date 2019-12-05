@@ -25,7 +25,7 @@
 
 .new_products_container {
     display: grid;
-    grid-template: repeat(4, 100px) / repeat(9, 1fr);
+    grid-template: repeat(5, 100px) / repeat(9, 1fr);
     grid-row: 7;
 }
 .new_products_container h3 {
@@ -188,6 +188,62 @@ img {
 @media only screen and (max-width: 1200px) {
     .container {
         width: 75%;
+        grid-gap: 20px;
+    }
+
+    #daily_deal_3, #daily_deal_4, #daily_deal_7, #daily_deal_8, #daily_deal_11, #daily_deal_12, #new_rpg_product_3, #new_bg_product_3, #new_cg_product_3 {
+        display: none;
+    }
+
+    .new_products_container {
+        display: grid;
+        grid-template: repeat(5, 100px) / repeat(6, 1fr);
+        grid-row: 7;
+    }
+
+    .new_products_container h3 {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+    
+    .new_rpg_container {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+    
+    .new_bg_container {
+        grid-column: 3 / 5;
+        grid-row: 2;
+    }
+    
+    .new_cg_container {
+        grid-column: 5 / 7;
+        grid-row: 2;
+    }
+    
+    .product_image_container img {
+        height: 200px;
+        width: 200px;
+    }
+    .product_description_container {
+        grid-column: 3 / span 9;
+        grid-row: 5;
+    }
+
+    .about_container {
+        grid-column: 1 / span 4;
+    }
+    
+    .customer_service_container {
+        grid-column: 5 / span 4;
+    }
+    
+    .store_policies_container {
+        grid-column: 9 / span 4;
+    }
+
+    .store_policies li {
+        font-size: 12px;
     }
 }
 
