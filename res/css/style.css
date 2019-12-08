@@ -185,13 +185,17 @@ img {
 
 /* Screen Size Adjustments */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     .container {
         width: 75%;
         grid-gap: 20px;
     }
 
-    #daily_deal_3, #daily_deal_4, #daily_deal_7, #daily_deal_8, #daily_deal_11, #daily_deal_12, #new_rpg_product_3, #new_bg_product_3, #new_cg_product_3 {
+    .daily_deals_container #daily_deal_3, #daily_deal_4, #daily_deal_7, #daily_deal_8, #daily_deal_11, #daily_deal_12 {
+        display: none;
+    }
+
+    .new_products_container #new_rpg_product_3, #new_bg_product_3, #new_cg_product_3 {
         display: none;
     }
 
@@ -247,17 +251,54 @@ img {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 321px) and (max-width: 768px) {
     .container {
         width: 50%;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 200px);
+        grid-template: repeat(6, 100px) / repeat(6, 1fr);
         grid-gap: 20px;
+    }
+
+    .daily_deals_container #daily_deal_2, #daily_deal_3, #daily_deal_4, #daily_deal_6, #daily_deal_7, #daily_deal_8, #daily_deal_10, #daily_deal_11, #daily_deal_12 {
+        display: none;
+    }
+
+    .new_products_container #new_rpg_product_2, #new_rpg_product_3, #new_bg_product_2, #new_bg_product_3, #new_cg_product_2, #new_cg_product_3 {
+        display: none;
+    }
+
+    .new_products_container {
+        display: grid;
+        grid-template: repeat(5, 100px) / repeat(3, 1fr);
+        grid-row: 7;
+    }
+
+    .new_products_container h3 {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+    
+    .new_rpg_container {
+        grid-column: 1 ;
+        grid-row: 2;
+    }
+    
+    .new_bg_container {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .new_cg_container {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .store_policies li {
+        font-size: 12px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 1px) and (max-width: 320px) {
     .container {
         width: 25%;
         display: grid;
@@ -265,4 +306,14 @@ img {
         grid-template-rows: repeat(6, 200px);
         grid-gap: 20px;
     }
+
+    .daily_deals_container #daily_deal_2, #daily_deal_3, #daily_deal_4, #daily_deal_5, #daily_deal_6, #daily_deal_7, #daily_deal_8, #daily_deal_9, #daily_deal_10, #daily_deal_11 {
+        display: none;
+    }
+
+    .new_products_container #new_rpg_product_2, #new_rpg_product_3, #new_bg_product_2, #new_bg_product_3, #new_cg_product_2, #new_cg_product_3 {
+        display: none;
+    }
+
+    
 }
