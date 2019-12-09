@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
         <title>JR Hobby World</title>
         <link href="./res/css/style.css" type="text/css" rel="stylesheet">
@@ -6,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     </head>
     <body class="container">
-        <div class="title_container title_bar">
+        <header class="title_container title_bar" role="banner">
             <h1>Welcome to JR Hobby World</h1>
-            <h4>Purveyors of fine tabletop gaming products</h4>
-        </div>
-        <div class="daily_deals_container">
-            <h3 id="daily_deals_title">Daily Deals</h3>
+            <h2>Purveyors of fine tabletop gaming products</h2>
+        </header>
+        <section class="daily_deals_container daily_deals">
+            <h3>Daily Deals</h3>
             <div id="daily_deal_1">
                 <img id="daily_deal_1" src="./res/img/rpg/deals/cyberpunk_2020_core.jpg" alt="Cyberpunk 2022 Core Rulebook">
                 <p>Cyberpunk 2022: Core Rulebook</p>
@@ -60,11 +61,11 @@
                 <img src="./res/img/cg/deals/star_wars_lcg_swayed_by_the_dark_side_force_pack.jpg" alt="Star Wars LCG Swayed by the Dark Side Force">
                 <p>Star Wars LCG: Swayed by the Dark Side Force Pack</p>
            </div>
-        </div>
-        <div class="new_products_container new_products">
+        </section>
+        <section class="new_products_container new_products">
                 <h3>New Products</h3>
             <div class="new_rpg_container new_rpg_products">
-                <h5>Role Playing Games</h5>
+                <h4>Role Playing Games</h4>
             </div>
             <div id="new_rpg_product_1">
                 <img src="./res/img/rpg/new/genesys_core.jpg" alt="Genesys Core Rulebook">
@@ -79,7 +80,7 @@
                 <p>Shadowrun 6E: Core Rulebook</p>
             </div>
             <div class="new_bg_container new_bg_products">
-                <h5>Board Games</h5>
+                <h4>Board Games</h4>
             </div>
             <div id="new_bg_product_1">
                 <img src="./res/img/bg/new/catan_base.jpg" alt="Settlers of Catan Base Game">
@@ -94,7 +95,7 @@
                 <p>Pandemic: Base Game</p>
             </div>
             <div class="new_cg_container new_cg_products">
-                <h5>Card Games</h5>
+                <h4>Card Games</h4>
             </div>
             <div id="new_cg_product_1">
                 <img src="./res/img/cg/new/dc_comics_base.jpg" alt="DC Comics Deckbuilder Base Set">
@@ -108,7 +109,7 @@
                 <img src="./res/img/cg/new/marvelChampions.jpg" alt="Marvel Champions Base Set">
                 <p>Marvel Champions: Base Set</p>
             </div>
-        </div>
+        </section>
         <footer class="footer_container">
             <nav class="footer_links">
                 <a href="./index.html">Home</a>
