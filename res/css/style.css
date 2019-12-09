@@ -1,16 +1,23 @@
 /* Layout */
 
-.container {
+.container_1 {
     width: 100%;
     display: grid;
     grid-template: repeat(12, 100px) / repeat(1, 1fr);
     grid-gap: 20px;
 }
 
-.title_container {
-    grid-row: 1 / span 2;
+.container_3 {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(12, 100px) / repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
+.title_container {
+    grid-row: 1 / span 2;
+    grid-column: 1 / -1;
+}
 .daily_deals_container {
     display: grid;
     grid-template: repeat(3, 100px) / repeat(12, 1fr);
@@ -65,15 +72,18 @@
 }
 
 .about_container {
-    grid-column: 1 / span 3;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .customer_service_container {
-    grid-column: 5 / span 3;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .store_policies_container {
-    grid-column: 9 / span 3;
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .footer_container {
@@ -168,9 +178,12 @@ img {
     text-align: left;
 }
 
+.customer_service input, select {
+    width: 100%;
+}
+
 .store_policies li {
     text-align: left;
-    font-size: 0.75rem;
 }
 
 .footer_links{
@@ -240,19 +253,22 @@ img {
     }
 
     .about_container {
-        grid-column: 1 / span 4;
+        grid-column: 1;
+        grid-row: 1;
     }
     
     .customer_service_container {
-        grid-column: 5 / span 4;
+        grid-column: 2;
+        grid-row: 1;
     }
     
     .store_policies_container {
-        grid-column: 9 / span 4;
+        grid-column: 3;
+        grid-row: 1;
     }
 
-    .store_policies li {
-        font-size: 12px;
+    .footer_container {
+        grid-row: 12;
     }
 }
 
@@ -302,8 +318,24 @@ img {
         grid-row: 2;
     }
 
-    .store_policies li {
-        font-size: 12px;
+    .store_policies li, .customer_service form, .customer_service input[type="button"], 
+    .customer_service select, .about p {
+        font-size: 0.75rem;
+    }
+
+    .about_container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .customer_service_container {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .store_policies_container {
+        grid-column: 3;
+        grid-row: 1;
     }
 
     .footer_container {
@@ -321,6 +353,16 @@ img {
     .new_products_container #new_rpg_product_1, #new_rpg_product_2, #new_bg_product_1, #new_bg_product_2,
     #new_cg_product_1, #new_cg_product_2 {
         display: none;
+    }
+
+    .about_container {
+        display: none;
+    }
+
+    .container_3 {
+        display: grid;
+        grid-template: repeat(12, 100px) / repeat(1, 1fr);
+        grid-gap: 20px;
     }
 
     .title_container {
@@ -359,6 +401,21 @@ img {
     .new_cg_container {
         grid-column: 3;
         grid-row: 2;
+    }
+
+    .customer_service_container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .store_policies_container {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .store_policies li, .customer_service form, .customer_service input[type="button"], 
+    .customer_service select, .about p {
+        font-size: 0.5rem;
     }
 
     .footer_container {
