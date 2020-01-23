@@ -11,8 +11,10 @@ prodImg.onmouseout = event => {
 
 addToCartButton.onclick = event => {
     event.target.innerHTML = 'Added!'
+    event.target.style.color = 'red';
 };
 
 addToCartButton.onmouseout = event => {
     event.target.innerHTML = 'Add to Cart';
+    event.target.style.color = '';
 };
